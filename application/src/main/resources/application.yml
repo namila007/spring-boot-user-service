@@ -1,0 +1,34 @@
+server:
+  port: 3030
+
+info:
+  version: @project.version@
+  description: @project.description@
+
+spring:
+  application:
+    name: user-service
+  cloud:
+    config:
+      enabled: false
+  data:
+    mongodb:
+      uri: "mongodb://localhost:27017/user-service"
+    redis:
+      repositories:
+        enabled: false
+  main:
+    web-application-type: reactive
+#    allow-bean-definition-overriding: true
+
+
+eureka:
+  client:
+    enabled: false
+
+
+me:
+  namila:
+    configs:
+
+
